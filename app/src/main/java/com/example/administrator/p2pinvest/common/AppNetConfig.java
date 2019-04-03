@@ -9,7 +9,7 @@ public class AppNetConfig {
     public static final String BASE_URL = "http://" + IPADDRESS +"/P2PInvest/";
 
     public static final String BASE_JSON = "file/";
-
+ 
     public static final String BASE_IMG = "image/";
 
     public static final String IMAGE = BASE_URL + BASE_IMG;
