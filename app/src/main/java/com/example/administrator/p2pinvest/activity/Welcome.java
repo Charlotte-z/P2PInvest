@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.administrator.p2pinvest.R;
+import com.example.administrator.p2pinvest.common.AppManager;
 
 public class Welcome extends Activity {
 
@@ -25,6 +26,7 @@ public class Welcome extends Activity {
             @Override
             public void run() {
                 startActivity(new Intent(Welcome.this, MainActivity.class));
+                finish();
             }
         }, 1000);
     }
