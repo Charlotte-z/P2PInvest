@@ -15,9 +15,9 @@
             android:id="@+id/iv_title_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground"
-            android:background="#b92240"
+            android:src="@drawable/left"
             android:layout_marginLeft="10dp"
+            android:alpha="0"
             />
 
         <TextView
@@ -34,8 +34,8 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/ic_launcher_foreground"
-            android:background="#b92240"
+            android:src="@drawable/right"
+            android:alpha="0"
             />
 
     </LinearLayout>
@@ -43,7 +43,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#b92240"
+        android:background="#fff"
         />
 
 </LinearLayout>

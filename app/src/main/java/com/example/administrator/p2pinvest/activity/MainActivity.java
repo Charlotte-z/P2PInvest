@@ -73,6 +73,7 @@ public class MainActivity extends FragmentActivity {
                     ft.add(R.id.fl_main, homeFragment);
                 }
                 ft.show(homeFragment);
+
                 break;
             case 1:
                 if(investFragment == null){

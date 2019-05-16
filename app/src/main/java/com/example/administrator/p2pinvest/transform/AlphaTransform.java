@@ -14,7 +14,6 @@ public class AlphaTransform implements ViewPager.PageTransformer {
             view.setAlpha(mMinAlpha);
         } else if (position <= 1)
         { // [-1,1]
-
             if (position < 0) //[0，-1]
             {
                 float factor = mMinAlpha + (1 - mMinAlpha) * (1 + position);

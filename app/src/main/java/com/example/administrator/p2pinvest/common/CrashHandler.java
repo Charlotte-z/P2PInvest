@@ -1,17 +1,10 @@
 package com.example.administrator.p2pinvest.common;
 
-import android.app.ActivityManager;
 import android.os.Build;
 import android.os.Looper;
-import android.os.SystemClock;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.example.administrator.p2pinvest.ui.UiUtils;
-
-import java.util.logging.Handler;
-
-import static android.content.ContentValues.TAG;
+import com.example.administrator.p2pinvest.util.UiUtils;
 
 /**
  * 捕获全局未捕获的异常，防止程序崩溃，后台及时收集数据

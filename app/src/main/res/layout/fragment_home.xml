@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:charlotte="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent">
     <include layout="@layout/common_title"/>
 
-    <ScrollView
+    <com.example.administrator.p2pinvest.ui.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:overScrollMode="never"
         >
 
             <LinearLayout
@@ -91,11 +93,19 @@
 
                 </LinearLayout>
 
-                    <Button
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:text="我是圆形进度条"
-                        />
+                   <com.example.administrator.p2pinvest.ui.RoundProgress
+                       android:layout_width="120dp"
+                       android:layout_height="120dp"
+                       android:id="@+id/roundPro_home"
+                       android:layout_marginTop="8dp"
+                       charlotte:max="100"
+                       charlotte:roundColor="#796d6d"
+                       charlotte:roundProgressColor="#df4141"
+                       charlotte:progress="10"
+                       charlotte:roundWidth="10dp"
+                       charlotte:textColor="#000"
+                       charlotte:textSize="20sp"
+                       />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -129,6 +139,7 @@
                     android:text="立即加入"
                     android:textSize="30sp"
                     android:textColor="#fff"
+                    android:id="@+id/join_immediately"
                     />
 
                 <TextView
@@ -139,6 +150,6 @@
                     android:drawableLeft="@drawable/guarantee_icon"
                     />
             </LinearLayout>
-    </ScrollView>
+    </com.example.administrator.p2pinvest.ui.MyScrollView>
 
 </LinearLayout>

@@ -9,14 +9,34 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.administrator.p2pinvest.R;
-import com.example.administrator.p2pinvest.ui.UiUtils;
+import com.example.administrator.p2pinvest.common.BaseFragment;
+import com.example.administrator.p2pinvest.util.UiUtils;
+import com.loopj.android.http.RequestParams;
 
-public class MoreFragment extends Fragment {
+public class MoreFragment extends BaseFragment {
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = UiUtils.getView(R.layout.fragment_more);
-        return view;
+    protected RequestParams getParams() {
+        return null;
+    }
+
+    @Override
+    protected String getUrl() {
+        return null;
+    }
+
+    @Override
+    protected void init(View view) {
+
+    }
+
+    @Override
+    protected void initData(View view, String content) {
+
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.fragment_more;
     }
 }

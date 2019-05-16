@@ -4,7 +4,7 @@ package com.example.administrator.p2pinvest.common;
  * 配置网络请求相关地址
  */
 public class AppNetConfig {
-    public static final String IPADDRESS = "192.168.1.107:8080";
+    public static final String IPADDRESS = "192.168.165.2:8080";
 
     public static final String BASE_URL = "http://" + IPADDRESS +"/P2PInvest/";
 

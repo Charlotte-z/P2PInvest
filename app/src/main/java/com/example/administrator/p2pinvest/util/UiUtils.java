@@ -1,4 +1,4 @@
-package com.example.administrator.p2pinvest.ui;
+package com.example.administrator.p2pinvest.util;
 
 import android.content.Context;
 import android.os.Handler;
@@ -44,5 +44,18 @@ public class UiUtils {
         //获取手机密度
         float density = getContext().getResources().getDisplayMetrics().density;
         return (int)(px/density);
+    }
+
+    public static void runOnUiThread(Runnable runnable) {
+        if(isInMainThread()){
+            runnable.run();
+        }else{
+            UiUtils.getHandler().post(runnable);
+        }
+    }
+
+    public static boolean isInMainThread() {
+        int mainId = android.os.Process.myTid();
+        return mainId == MyApplication.mainThreadId;
     }
 }

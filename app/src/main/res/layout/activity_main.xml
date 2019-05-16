@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:text="Invest"
             android:gravity="center"
-            android:drawableTop="@drawable/home_selector"
+            android:drawableTop="@drawable/invest_selector"
             />
 
         <RadioButton
@@ -52,7 +52,7 @@
             android:layout_weight="1"
             android:text="Mine"
             android:gravity="center"
-            android:drawableTop="@drawable/home_selector"
+            android:drawableTop="@drawable/asset_selector"
             />
 
         <RadioButton
@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:text="More"
             android:gravity="center"
-            android:drawableTop="@drawable/home_selector"
+            android:drawableTop="@drawable/more_selector"
             />
 
 
